@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">DIBESH KUMAR PARIDA</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Dibesh</span><br> FullStack Web <br>Developer</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/dibesh-kumar-parida-3b9652313" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/chinnuxop/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/chinnuxop" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/Dibesh1.1.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__img-container">
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+
+                    <div class="skills__content">
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">Aspiring Full Stack Developer with experience in Java, Spring Boot, Angular, MySQL, and Android development. Passionate about building efficient, scalable, and user-focused applications.</p>
+
+                        <h3 class="skills__category">Frontend Skills</h3>
+                        <div class="skills__grid">
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skills__icon-img">
+                                <h3 class="skills__name">HTML5</h3>
+                                <div class="skills__bar skills__html"></div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skills__icon-img">
+                                <h3 class="skills__name">CSS3</h3>
+                                <div class="skills__bar skills__css"></div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skills__icon-img">
+                                <h3 class="skills__name">JAVASCRIPT</h3>
+                                <div class="skills__bar skills__js"></div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="skills__icon-img">
+                                <h3 class="skills__name">ANGULAR</h3>
+                                <div class="skills__bar skills__angular"></div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="skills__icon-img">
+                                <h3 class="skills__name">TYPESCRIPT</h3>
+                                <div class="skills__bar skills__typescript"></div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <h3 class="skills__category">Backend Skills</h3>
+                        <div class="skills__grid">
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skills__icon-img">
+                                <h3 class="skills__name">JAVA</h3>
+                                <div class="skills__bar skills__java"></div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="skills__icon-img">
+                                <h3 class="skills__name">SPRING BOOT</h3>
+                                <div class="skills__bar skills__springboot"></div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skills__icon-img">
+                                <h3 class="skills__name">MYSQL</h3>
+                                <div class="skills__bar skills__mysql"></div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <h3 class="skills__category">Mobile Skills</h3>
+                        <div class="skills__grid">
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="skills__icon-img">
+                                <h3 class="skills__name">KOTLIN</h3>
+                                <div class="skills__bar skills__kotlin"></div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="skills__icon-img">
+                                <h3 class="skills__name">FIREBASE</h3>
+                                <div class="skills__bar skills__firebase"></div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <h3 class="skills__category">Design Skills</h3>
+                        <div class="skills__grid">
+                            <div class="skills__card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="UX/UI" class="skills__icon-img">
+                                <h3 class="skills__name">UX/UI</h3>
+                                <div class="skills__bar skills__ux"></div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/Dibesh1.2.jpeg" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'am Dibesh Kumar Parida</h2>
+                        <p class="about__text">a passionate MCA student and aspiring Full Stack Developer based in India. I enjoy turning ideas into real-world web and mobile applications using clean code and efficient design.
+
+I specialize in Java Full Stack development, working with Spring Boot, Angular, MySQL, and front-end technologies like HTML, CSS, and JavaScript. I also have experience in Android development (Kotlin + Firebase), where I focus on building responsive and user-friendly applications.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                     <a href="https://movie-x-web.netlify.app/" class="work__img">
+                        <img src="assets/img/movie.avif" alt="Movie X Project">
+                    </a>
+                    <h3>Movie-x-Browser</h3>
+                     </div>
+                     
+                
+            </section>
+
+            <!--===== CONTACT =====-->
+           <section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact__container bd-grid">
+        <form class="contact__form" action="mailto:dibeshwork07@gmail.com" method="post" enctype="text/plain">
+            <input type="text" id="name" name="name" placeholder="Your Name" class="contact__input" required>
+
+            <input type="email" id="email" name="email" placeholder="Your Email" class="contact__input" required>
+
+            <textarea id="message" name="message" cols="0" rows="10"
+                placeholder="Your Message"
+                class="contact__input"
+                required></textarea>
+
+            <button type="submit" class="contact__button button">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            
+            <p class="footer__copy">&#169; 2026. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
