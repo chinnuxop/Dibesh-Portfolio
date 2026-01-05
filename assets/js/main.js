@@ -62,10 +62,10 @@ const progressBars = document.querySelectorAll('.skills__bar');
 
 function showProgress() {
     progressBars.forEach(progressBar => {
-        const value = progressBar.style.width;
+        const percentage = progressBar.nextElementSibling.textContent;
         progressBar.style.width = '0%';
         setTimeout(() => {
-            progressBar.style.width = value;
+            progressBar.style.width = percentage;
         }, 100);
     });
 }
