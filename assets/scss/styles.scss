@@ -190,14 +190,16 @@ img{
 .home{
     position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 4rem 1rem 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem 5rem;
     min-height: 100vh;
     overflow-x: hidden; // prevent horizontal scroll
 
     &__data{
-        text-align: center;
+        flex: 1;
+        text-align: left;
         z-index: 1;
     }
     &__title{
@@ -210,11 +212,11 @@ img{
     }
     &__social{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        gap: var(--mb-4);
+        margin-top: var(--mb-4);
         &-icon{
             width: max-content;
-            margin-bottom: var(--mb-2);
             font-size: 1.5rem;
             color: var(--second-color);
 
@@ -225,10 +227,11 @@ img{
     }
 
     &__img{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: min(260px, 80vw);
+        flex: 1;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: min(400px, 40vw);
         height: auto;
         z-index: 0;
     }
@@ -543,11 +546,63 @@ img{
 
     .contact{
         &__form{
-            width: 360px;
+            width: 280px;
             padding-top: 2rem ;
         }
         &__container{
             justify-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .home{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 1rem 4rem;
+        gap: 2rem;
+        min-height: auto;
+
+        &__data{
+            flex: none;
+            text-align: center;
+            width: 100%;
+        }
+        &__title{
+            font-size: 1.8rem;
+            margin-bottom: var(--mb-4);
+            line-height: 1.2;
+        }
+        &__social{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: var(--mb-4);
+
+            &-icon{
+                font-size: 1.4rem;
+            }
+        }
+        &__img{
+            flex: none;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 250px;
+            margin-top: var(--mb-4);
+        }
+        &__blob{
+            width: 100%;
+            max-width: 250px;
+
+            &-img{
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+            }
         }
     }
 }
