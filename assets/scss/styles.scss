@@ -189,13 +189,16 @@ img{
 /*===== HOME =====*/
 .home{
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 5rem;
-    padding: 4rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 1rem 5rem;
+    min-height: 100vh;
+    overflow-x: hidden; // prevent horizontal scroll
 
     &__data{
-        align-self: center;
+        text-align: center;
+        z-index: 1;
     }
     &__title{
         font-size: var(--big-font-size);
@@ -208,6 +211,7 @@ img{
     &__social{
         display: flex;
         flex-direction: column;
+        align-items: center;
         &-icon{
             width: max-content;
             margin-bottom: var(--mb-2);
@@ -224,13 +228,18 @@ img{
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 260px;
+        width: min(260px, 80vw);
+        height: auto;
+        z-index: 0;
     }
     &__blob{
         fill: var(--first-color);
+        width: 100%;
+        height: auto;
 
         &-img{
-            width: 360px;
+            width: min(360px, 90vw);
+            height: auto;
             transform: translateY(-10px);
         }
     }
@@ -461,39 +470,56 @@ img{
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 575px){
     .home{
-        row-gap: 2rem;
+        padding: 3rem 1rem 4rem;
+        gap: 1.5rem;
 
+        &__title{
+            font-size: 1.5rem; // smaller font for very small screens
+            margin-bottom: var(--mb-4);
+        }
+        &__social{
+            &-icon{
+                font-size: 1.3rem;
+            }
+        }
         &__img{
-            width: 200px;
+            width: min(200px, 70vw);
+            bottom: 0;
+        }
+        &__blob-img{
+            width: min(280px, 80vw);
         }
     }
-}
-
-@media screen and (max-width: 575px){
     .skills__container{
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) and (max-width: 767px){
     .home{
-        padding: 4rem 0 2rem;
+        padding: 4rem 2rem 2rem;
+        gap: 2rem;
+
+        &__title{
+            font-size: 2.5rem;
+        }
         &__social{
-            padding-top: 0;
-            padding-bottom: 2.5rem;
             flex-direction: row;
-            align-self: flex-end;
+            justify-content: center;
+            gap: var(--mb-4);
 
             &-icon{
                 margin-bottom: 0;
-                margin-right: var(--mb-4);
             }
         }
         &__img{
-            width: 300px;
-            bottom: 25%;
+            width: min(300px, 40vw);
+            bottom: 10%;
+        }
+        &__blob-img{
+            width: min(350px, 45vw);
         }
     }
 

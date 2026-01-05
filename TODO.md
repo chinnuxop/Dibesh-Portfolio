@@ -1,18 +1,11 @@
-# TODO: Enhance Skills Section
+# TODO: Make Home Section Mobile Responsive
 
-- [x] Add CSS animations for progress bars to fill on scroll
-- [x] Implement hover effects on skill items (scale, shadow)
-- [x] Add hover effects on skill icons (rotate, color change)
-- [x] Enhance background of skills section (gradient or pattern)
-- [x] Update JavaScript to trigger progress bar animations using Intersection Observer
-- [x] Test animations and effects
-- [x] Redesign skills section with card-based layout and skill images
-- [x] Add staggered fade-in animations for skill cards
-- [x] Implement hover effects for skill images (rotation and scaling)
-
-# TODO: Fix Layout Responsiveness and Full Width Usage
-
-- [x] Update .bd-grid to use full width with padding instead of max-width and margins
-- [x] Ensure sections use responsive CSS Grid/Flexbox layouts
-- [x] Adjust media queries for proper spacing and alignment across screen sizes
-- [x] Test layout on different devices and screen sizes
+## Tasks
+- [ ] Update home layout to use flexbox for better mobile stacking
+- [ ] Make home__img responsive: adjust positioning and sizing for small screens
+- [ ] Adjust font sizes with media queries for smaller screens
+- [ ] Optimize spacing, padding, and row gaps using responsive units
+- [ ] Ensure no horizontal scroll by handling overflow and using viewport units
+- [ ] Add tablet-specific media queries (576px-767px)
+- [ ] Compile SCSS to CSS after changes
+- [ ] Test responsiveness on different screen sizes
