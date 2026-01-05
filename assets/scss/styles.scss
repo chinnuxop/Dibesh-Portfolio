@@ -243,7 +243,7 @@ img{
         &-img{
             width: min(360px, 90vw);
             height: auto;
-            transform: translateY(-10px);
+            transform: translate(50px, 50px);
         }
     }
 }
